@@ -1,0 +1,130 @@
+<!DOCTYPE html>  
+<html lang="en"> 
+    <head> 
+        <style>
+            .form{
+                 
+                position:relative;
+                background-color:rgb(172, 172, 240);
+                padding:30px;
+                border:1px solid black;
+    
+                text-align:left;
+                height:800px;
+                width:500px;
+                left:35%;
+                right:55%;
+                top:50%;
+                bottom:35%;
+                border-radius:10px;
+                
+                
+                
+            }
+            *{
+                background-color:azure;
+            }
+        </style>
+
+
+       
+       
+        <title>
+            ***** form  example *****
+        </title>
+
+    </head>
+    <body>
+        
+         <form action="server/submit of user from.html"  class="form"> <!--action provaids a path for server to submitt the data-->
+          
+            FIRST NAME :&nbsp; <input type="text"  name = "NAME"  autofocus required="must enter your name" placeholder="i am holding a place"/><br><br>
+
+            LAST NAME : &nbsp;<input type="text"  name = "NAME" autofocus required/><br><br>
+
+            
+    <!--       DATE OF BIRTH :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                           &nbsp;<input type="date"  name = "DATE"  value="yyyy/mm/dd" max="2022/12/01" min="2000/12/01"/> <br><br>
+
+            WEEK: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                           &nbsp;<input type="week"  name ="WEEK" > <br><br>
+
+            MONTH: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                           &nbsp;<input type="month"  name ="MONTH" > <br><br>
+
+            TIME:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                           &nbsp;<input type="time"  name ="TIME" > <br><br>
+
+            PASSWORD  : &nbsp;<input type="password" name = "PASSWORD" maxlength="8" autofocus  pattern=[0-9]{8}/><br><br>
+
+            EMAIL ID &nbsp;&nbsp;&nbsp;&nbsp;:&nbsp; &nbsp;<input type="email" name="EMAIL ID" value="@gmail.com" autofocus required/><br><br>
+
+            ADDRESS&nbsp;&nbsp; &nbsp;&nbsp;:&nbsp;&nbsp;<textarea type="text" name="ADDRESS" rows="3" column="3" autofocus required></textarea><br><br> <!--rows means it will display 3 rows at a time-->
+                            
+                             <!--autofocus is for curser to focus on the inputbar,
+                                  required is for nesscery filed    
+                                pattern is used for putting a range of passcode or any formatt
+                            placeholder will hold a place for input entry and gives msg to user         -->
+
+
+        <!--   SELECT THE COURSES:
+                                &nbsp;<input type="checkbox"  name = "course1"  value="html"/>html
+                                &nbsp;<input type="checkbox"  name = "course2"  value="css"/>css
+                                &nbsp;<input type="checkbox"  name = "course3"  value="javascript"/>javascript
+                                &nbsp;<input type="checkbox"  name = "course4" checkedvalue="git" />git  <br><br>
+ 
+                                checked value makes the default select-->
+          <!--  SELECT THE STREAM:
+                               &nbsp;<input type="radio"  name = "course"  value="EEE"/>EEE
+                               &nbsp;<input type="radio"  name = "course"  value="ECE"/>ECE
+                               &nbsp;<input type="radio"  name = "course"  value="CSC"/>CSC
+                               &nbsp;<input type="radio"  name = "course"  value="IT"/>IT<br><br>
+
+            SKILLS:&nbsp;&nbsp;&nbsp;&nbsp;
+                    <select multiple  size ="3" name= "pref"><!--combo box- you can select mutiple value by control key-->
+                   <!-- <option value="ML">machine learing
+                    <option value="PY">python
+                    <option value="c">c programming</option>
+                    </select><br><br>
+
+            UNIVERSITY:&nbsp;&nbsp;&nbsp;&nbsp;
+                       &nbsp;<input id="university name" type="text"  name = "UNIVERSITY" List="UNIVERSITY"/>
+            <datalist id="UNIVERSITY">  <!--id should be given the list value-->
+              <!--  <option value="JNTUH">
+                <option value="JNTUK">
+                <option value="BITS BILLANI">
+                <option value="IIIT">
+                <option value="NIT">
+                <option value="IAM">
+                <option value="IES"> 
+                <option value="ANY">
+                </datalist><br><br>
+
+                     
+            
+            RANGE :&nbsp;&nbsp;&nbsp;&nbsp;
+                       &nbsp;<input type="range"  name ="RANGE"  value="10" min="0" max="50"> <br><br>
+
+            SEARCH: &nbsp;&nbsp;&nbsp;&nbsp;
+                       &nbsp;<input type="search"  name ="SEARCH"  value="find something interesting"> <br><br>
+
+
+
+            
+            SELECT THE FILE:
+                                &nbsp;<input type="file"  name = "file name"  value="choose file" size="2" autofocus required/>
+                                &nbsp;<input type="hidden"  name = "hidden"  value="owner name"/><br><br> <!--which can not be seen by enduser-->
+                                
+
+
+
+            <br>
+            <input type ="submit" >  &nbsp;&nbsp;
+            <input type ="reset"  >
+
+
+         </form>
+         </div>
+
+    </body>
+</html>
